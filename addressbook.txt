@@ -151,3 +151,11 @@ mysql> select * FROM AddressBook;
 |         4 | Pooja     | Rane     | Swarget | Pune   | Maharashtra | 411008 | 9874561230  | Ranepooja@gmail.com | Friend    |
 +-----------+-----------+----------+---------+--------+-------------+--------+-------------+---------------------+-----------+
 4 rows in set (0.00 sec)
+
+mysql> SELECT count(Type) FROM AddressBook;
++-------------+
+| count(Type) |
++-------------+
+|           4 |
++-------------+
+1 row in set (0.00 sec)
