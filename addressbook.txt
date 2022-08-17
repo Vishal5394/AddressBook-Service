@@ -89,3 +89,11 @@ mysql> select * FROM AddressBook;
 |         4 | Pooja     | Rane     | Swarget | Pune   | Maharashtra | 411008 | 9874561230  | Ranepooja@gmail.com |
 +-----------+-----------+----------+---------+--------+-------------+--------+-------------+---------------------+
 4 rows in set (0.00 sec)
+
+mysql> SELECT * FROM AddressBook WHERE City = 'Surat';
++-----------+-----------+----------+---------+-------+---------+--------+-------------+----------------+
+| Person_Id | FirstName | LastName | Address | City  | State   | Zip    | PhoneNumber | Email          |
++-----------+-----------+----------+---------+-------+---------+--------+-------------+----------------+
+|         3 | Asha      | Patil    | Adajan  | Surat | Gujarat | 410455 | 9894561230  | asha@gmail.com |
++-----------+-----------+----------+---------+-------+---------+--------+-------------+----------------+
+1 row in set (0.00 sec)
