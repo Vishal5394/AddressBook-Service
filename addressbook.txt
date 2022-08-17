@@ -39,3 +39,22 @@ mysql> desc AddressBook;
 | Email       | varchar(225) | NO   |     | NULL    |       |
 +-------------+--------------+------+-----+---------+-------+
 9 rows in set (0.15 sec)
+
+mysql> INSERT INTO AddressBook values(1,'Sham','Sunder','Katraj','Pune','Maharashtra',411032,'7894561230','Sunder@gmail.com');
+Query OK, 1 row affected (0.06 sec)
+
+mysql> INSERT INTO AddressBook values(2,'Ram','Sunder','Thane','Mumbai','Maharashtra',410057,'8894561230','RamS@gmail.com'),(3,'Asha','Patil','Limb','Satara','Maharashtra',410455,'9894561230','asha@gmail.com'),(4,'Pooja','Rane','Swarget','Pune','Maharashtra',411008,'9874561230','Ranepooja@gmail.com'),(5,'Samar','Kate','Borivali','Mumbai','Maharashtra',410045,'8799561230','KateS@gmail.com');
+Query OK, 4 rows affected (1.35 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> select * FROM AddressBook;
++-----------+-----------+----------+----------+--------+-------------+--------+-------------+---------------------+
+| Person_Id | FirstName | LastName | Address  | City   | State       | Zip    | PhoneNumber | Email               |
++-----------+-----------+----------+----------+--------+-------------+--------+-------------+---------------------+
+|         1 | Sham      | Sunder   | Katraj   | Pune   | Maharashtra | 411032 | 7894561230  | Sunder@gmail.com    |
+|         2 | Ram       | Sunder   | Thane    | Mumbai | Maharashtra | 410057 | 8894561230  | RamS@gmail.com      |
+|         3 | Asha      | Patil    | Limb     | Satara | Maharashtra | 410455 | 9894561230  | asha@gmail.com      |
+|         4 | Pooja     | Rane     | Swarget  | Pune   | Maharashtra | 411008 | 9874561230  | Ranepooja@gmail.com |
+|         5 | Samar     | Kate     | Borivali | Mumbai | Maharashtra | 410045 | 8799561230  | KateS@gmail.com     |
++-----------+-----------+----------+----------+--------+-------------+--------+-------------+---------------------+
+5 rows in set (0.00 sec)
