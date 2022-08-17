@@ -159,3 +159,20 @@ mysql> SELECT count(Type) FROM AddressBook;
 |           4 |
 +-------------+
 1 row in set (0.00 sec)
+
+mysql> INSERT INTO AddressBook values(5,'Raj','shankar','Ved','Syrat','Gujarat',395007,'8967561230','RajS@gmail.com','Friend'),(6,'Sandhya','Patil','Limb','Satara','Maharashtra',410455,'8794561230','sandhya@gmail.com','Family');
+Query OK, 2 rows affected (0.16 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> select * FROM AddressBook;
++-----------+-----------+----------+---------+--------+-------------+--------+-------------+---------------------+-----------+
+| Person_Id | FirstName | LastName | Address | City   | State       | Zip    | PhoneNumber | Email               | Type      |
++-----------+-----------+----------+---------+--------+-------------+--------+-------------+---------------------+-----------+
+|         1 | Sham      | Sunder   | Katraj  | Pune   | Maharashtra | 411032 | 7894561230  | Sunder@gmail.com    | colleague |
+|         2 | Ram       | Sunder   | Thane   | Mumbai | Maharashtra | 410057 | 8894561230  | RamS@gmail.com      | colleague |
+|         3 | Asha      | Patil    | Adajan  | Surat  | Gujarat     | 410455 | 9894561230  | asha@gmail.com      | Family    |
+|         4 | Pooja     | Rane     | Swarget | Pune   | Maharashtra | 411008 | 9874561230  | Ranepooja@gmail.com | Friend    |
+|         5 | Raj       | shankar  | Ved     | Syrat  | Gujarat     | 395007 | 8967561230  | RajS@gmail.com      | Friend    |
+|         6 | Sandhya   | Patil    | Limb    | Satara | Maharashtra | 410455 | 8794561230  | sandhya@gmail.com   | Family    |
++-----------+-----------+----------+---------+--------+-------------+--------+-------------+---------------------+-----------+
+6 rows in set (0.00 sec)
