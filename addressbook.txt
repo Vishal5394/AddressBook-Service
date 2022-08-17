@@ -113,3 +113,14 @@ mysql> SELECT count(State) FROM AddressBook ;
 |            4 |
 +--------------+
 1 row in set (0.00 sec)
+
+mysql> SELECT * FROM AddressBook ORDER BY FirstName, City;
++-----------+-----------+----------+---------+--------+-------------+--------+-------------+---------------------+
+| Person_Id | FirstName | LastName | Address | City   | State       | Zip    | PhoneNumber | Email               |
++-----------+-----------+----------+---------+--------+-------------+--------+-------------+---------------------+
+|         3 | Asha      | Patil    | Adajan  | Surat  | Gujarat     | 410455 | 9894561230  | asha@gmail.com      |
+|         4 | Pooja     | Rane     | Swarget | Pune   | Maharashtra | 411008 | 9874561230  | Ranepooja@gmail.com |
+|         2 | Ram       | Sunder   | Thane   | Mumbai | Maharashtra | 410057 | 8894561230  | RamS@gmail.com      |
+|         1 | Sham      | Sunder   | Katraj  | Pune   | Maharashtra | 411032 | 7894561230  | Sunder@gmail.com    |
++-----------+-----------+----------+---------+--------+-------------+--------+-------------+---------------------+
+4 rows in set (0.15 sec)
