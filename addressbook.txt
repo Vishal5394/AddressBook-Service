@@ -17,3 +17,25 @@ mysql> show databases;
 | vishaldb             |
 +----------------------+
 8 rows in set (0.00 sec)
+
+mysql> use addressbookservicedb;
+Database changed
+
+mysql> create table AddressBook(Person_Id int(5) not null primary key, FirstName varchar(25) not null, LastName varchar(25) not null, Address varchar(225) not null, City varchar(25) not null, State varchar(25) not null, Zip int(25) not null, PhoneNumber varchar(225) not null, Email varchar(225) not null );
+Query OK, 0 rows affected, 2 warnings (0.85 sec)
+
+mysql> desc AddressBook;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| Person_Id   | int          | NO   | PRI | NULL    |       |
+| FirstName   | varchar(25)  | NO   |     | NULL    |       |
+| LastName    | varchar(25)  | NO   |     | NULL    |       |
+| Address     | varchar(225) | NO   |     | NULL    |       |
+| City        | varchar(25)  | NO   |     | NULL    |       |
+| State       | varchar(25)  | NO   |     | NULL    |       |
+| Zip         | int          | NO   |     | NULL    |       |
+| PhoneNumber | varchar(225) | NO   |     | NULL    |       |
+| Email       | varchar(225) | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+9 rows in set (0.15 sec)
