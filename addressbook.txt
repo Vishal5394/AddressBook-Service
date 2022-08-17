@@ -97,3 +97,19 @@ mysql> SELECT * FROM AddressBook WHERE City = 'Surat';
 |         3 | Asha      | Patil    | Adajan  | Surat | Gujarat | 410455 | 9894561230  | asha@gmail.com |
 +-----------+-----------+----------+---------+-------+---------+--------+-------------+----------------+
 1 row in set (0.00 sec)
+
+mysql> SELECT count(City) FROM AddressBook ;
++-------------+
+| count(City) |
++-------------+
+|           4 |
++-------------+
+1 row in set (0.06 sec)
+
+mysql> SELECT count(State) FROM AddressBook ;
++--------------+
+| count(State) |
++--------------+
+|            4 |
++--------------+
+1 row in set (0.00 sec)
